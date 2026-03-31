@@ -1,0 +1,51 @@
+  <!-- ══════════════════════════════════════════
+  GOOGLE SHEETS — INSTRUCCIONES DE CONEXIÓN
+  ══════════════════════════════════════════
+  1. Creá una Google Sheet nueva en sheets.google.com
+  2. En la fila 1 poné estos encabezados (exactamente):
+     A: Timestamp | B: Nombre | C: Apellido | D: Email
+     E: Asistencia | F: Personas | G: Menú | H: Mensaje
+  3. Abrí Extensiones → Apps Script y pegá este código:
+
+  function doPost(e) {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    sheet.appendRow([
+      new Date(),
+      data.nombre, data.apellido, data.email,
+      data.asistencia, data.personas, data.menu, data.mensaje
+    ]);
+    return ContentService
+      .createTextOutput(JSON.stringify({result:'ok'}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
+  4. Publicá el script: Implementar → Nueva implementación
+     → Tipo: Aplicación web → Acceso: Cualquier usuario → Implementar
+  5. Copiá la URL de implementación
+  6. Reemplazá la variable SHEETS_URL en el JS de esta página:
+     const SHEETS_URL = 'PEGAR_TU_URL_AQUI';
+══════════════════════════════════════════ -->
+
+      <!-- ╔══════════════════════════════════════════════════╗
+         ║  CÓMO CONECTAR TU GOOGLE FORM (3 pasos)         ║
+         ╠══════════════════════════════════════════════════╣
+         ║  1. Ir a forms.google.com → Formulario en blanco ║
+         ║     Agregar estas preguntas (marcar obligatorio):║
+         ║     · Nombre          (Respuesta corta)          ║
+         ║     · Apellido        (Respuesta corta)          ║
+         ║     · Email           (Respuesta corta)          ║
+         ║     · ¿Asistís?       (Opción múltiple: Sí / No) ║
+         ║     · Cantidad        (Desplegable: 1, 2, 3, 4)  ║
+         ║     · Menú            (Opción múltiple)          ║
+         ║     · Mensaje         (Párrafo — opcional)       ║
+         ║                                                  ║
+         ║  2. En Respuestas → ícono Sheets → Crear         ║
+         ║     planilla nueva → las respuestas se guardan   ║
+         ║     automáticamente en Google Sheets             ║
+         ║                                                  ║
+         ║  3. En el Form → ⋮ (tres puntos) → Obtener       ║
+         ║     vínculo para insertar → copiá el src del     ║
+         ║     <iframe> → pegalo en el atributo src del     ║
+         ║     iframe de abajo reemplazando PEGAR_URL_FORM  ║
+         ╚══════════════════════════════════════════════════╝ -->

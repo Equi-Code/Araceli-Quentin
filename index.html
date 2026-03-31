@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:title" content="Aracelli & Quentin 💍" />
+<meta property="og:description" content="Nos casamos el 22 de agosto de 2026. ¡Los esperamos con mucho amor!" />
+<meta property="og:image" content="https://araceliyquentin.netlify.app/preview.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://araceliyquentin.netlify.app/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_AR" />
+<meta property="og:locale:alternate" content="fr_FR" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aracelli & Quentin 💍" />
+<meta name="twitter:description" content="Nos casamos el 22 de agosto de 2026. ¡Los esperamos con mucho amor!" />
+<meta name="twitter:image" content="https://araceliyquentin.netlify.app/preview.jpg" />
+
+<link rel="icon" type="image/png" href="./Assets/favicon.png" />
+<link rel="apple-touch-icon" href="./Assets/favicon.png" />
+  
+  <title>Aracelli & Quentin — 22 Août 2026</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+<body>
+
+  <!-- LANG SWITCHER -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('es')">ES</button>
+    <button class="lang-btn" onclick="setLang('fr')">FR</button>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#historia"><span data-lang="es" class="active">Nosotros</span><span data-lang="fr">Notre
+        histoire</span></a>
+    <a href="#cronograma"><span data-lang="es" class="active">Programa</span><span data-lang="fr">Programme</span></a>
+    <a href="#lugar"><span data-lang="es" class="active">Lugar</span><span data-lang="fr">Lieu</span></a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#regalos"><span data-lang="es" class="active">Regalos</span><span data-lang="fr">Cadeaux</span></a>
+  </nav>
+
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="floral-top">❀ ✿ ❁ ✿ ❀</div>
+    <div class="corner corner-tl">🌸🌿</div>
+    <div class="corner corner-tr">🌸🌿</div>
+    <div class="corner corner-bl">🌿🌸</div>
+    <div class="corner corner-br">🌿🌸</div>
+
+    <p class="hero-subtitle">
+      <span data-lang="es" class="active">los invitan a celebrar su unión</span>
+      <span data-lang="fr">vous invitent à célébrer leur union</span>
+    </p>
+    <h1>Aracelli <span class="hero-ampersand">&amp;</span> Quentin</h1>
+    <p class="hero-tagline">
+      <span data-lang="es" class="active">Con alegría y amor, los esperan</span>
+      <span data-lang="fr">Avec joie et amour, ils vous attendent</span>
+    </p>
+    <div class="hero-divider"><span style="color:var(--gold)">❀</span></div>
+    <p class="hero-date">
+      <span data-lang="es" class="active">Sábado 22 de Agosto de 2026</span>
+      <span data-lang="fr">Samedi 22 Août 2026</span>
+    </p>
+    <p class="hero-place">Ailly-sur-Somme · Albert, France</p>
+    <div class="floral-bottom">❀ ✿ ❁</div>
+  </section>
+
+  <!-- ══ COUNTDOWN ══ -->
+  <div class="countdown-section">
+    <p class="countdown-label">
+      <span data-lang="es" class="active">Falta</span>
+      <span data-lang="fr">Dans</span>
+    </p>
+    <div class="countdown">
+      <div class="countdown-item">
+        <div class="countdown-num" id="cd-days">—</div>
+        <div class="countdown-unit"><span data-lang="es" class="active">Días</span><span data-lang="fr">Jours</span>
+        </div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-num" id="cd-hours">—</div>
+        <div class="countdown-unit"><span data-lang="es" class="active">Horas</span><span data-lang="fr">Heures</span>
+        </div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-num" id="cd-min">—</div>
+        <div class="countdown-unit"><span data-lang="es" class="active">Minutos</span><span
+            data-lang="fr">Minutes</span></div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-num" id="cd-sec">—</div>
+        <div class="countdown-unit"><span data-lang="es" class="active">Segundos</span><span
+            data-lang="fr">Secondes</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ HISTORIA ══ -->
+  <section id="historia">
+    <div class="section-ornament reveal">❀ ✿ ❀</div>
+    <p class="section-label reveal"><span data-lang="es" class="active">Su historia</span><span data-lang="fr">Leur
+        histoire</span></p>
+    <h2 class="section-title reveal"><span data-lang="es" class="active">Cómo llegaron hasta aquí</span><span
+        data-lang="fr">Comment ils en sont arrivés là</span></h2>
+    <div class="gold-line reveal"><span>❁</span></div>
+
+    <div class="historia-grid">
+      <div class="historia-item reveal">
+        <div class="historia-year">2020</div>
+        <div class="historia-text">
+          <h3><span data-lang="es" class="active">El primer encuentro</span><span data-lang="fr">La première
+              rencontre</span></h3>
+          <p>
+            <span data-lang="es" class="active">Se conocieron en París durante un intercambio universitario. Una tarde
+              de invierno, un café y horas de conversación que no querían terminar.</span>
+            <span data-lang="fr">Ils se sont rencontrés à Paris lors d'un échange universitaire. Un après-midi d'hiver,
+              un café et des heures de conversation qui ne voulaient pas s'arrêter.</span>
+          </p>
+        </div>
+      </div>
+      <div class="historia-item reveal">
+        <div class="historia-year">2022</div>
+        <div class="historia-text">
+          <h3><span data-lang="es" class="active">La apuesta</span><span data-lang="fr">Le pari</span></h3>
+          <p>
+            <span data-lang="es" class="active">Decidieron apostar por el amor sin importar la distancia. Vuelos,
+              videollamadas y mucho café de por medio fueron construyendo algo sólido.</span>
+            <span data-lang="fr">Ils ont décidé de parier sur l'amour sans se soucier de la distance. Des vols, des
+              appels vidéo et beaucoup de café ont construit quelque chose de solide.</span>
+          </p>
+        </div>
+      </div>
+      <div class="historia-item reveal">
+        <div class="historia-year">2024</div>
+        <div class="historia-text">
+          <h3><span data-lang="es" class="active">La propuesta</span><span data-lang="fr">La demande en mariage</span>
+          </h3>
+          <p>
+            <span data-lang="es" class="active">En las orillas del río Somme, con flores silvestres y el sol del
+              atardecer, Quentin le pidió a Aracelli que se casara con él. Ella dijo que sí.</span>
+            <span data-lang="fr">Sur les rives de la Somme, avec des fleurs sauvages et le soleil couchant, Quentin a
+              demandé Aracelli en mariage. Elle a dit oui.</span>
+          </p>
+        </div>
+      </div>
+      <div class="historia-item reveal">
+        <div class="historia-year">2026</div>
+        <div class="historia-text">
+          <h3><span data-lang="es" class="active">El gran día</span><span data-lang="fr">Le grand jour</span></h3>
+          <p>
+            <span data-lang="es" class="active">Ahora quieren compartirlo con las personas que más aman. Gracias por
+              acompañarlos en este capítulo tan especial.</span>
+            <span data-lang="fr">Ils veulent maintenant partager ce moment avec ceux qu'ils aiment le plus. Merci d'être
+              là pour ce chapitre si spécial.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CRONOGRAMA ══ -->
+  <section id="cronograma">
+    <div class="section-ornament reveal">❀ ✿ ❀</div>
+    <p class="section-label reveal"><span data-lang="es" class="active">El día</span><span data-lang="fr">Le jour
+        J</span></p>
+    <h2 class="section-title reveal"><span data-lang="es" class="active">Programa</span><span
+        data-lang="fr">Programme</span></h2>
+    <div class="gold-line reveal"><span>❁</span></div>
+
+    <div class="timeline reveal">
+      <div class="tl-row">
+        <div class="tl-left">
+          <div class="tl-time">16h30</div>
+          <div class="tl-name"><span data-lang="es" class="active">Ceremonia religiosa</span><span
+              data-lang="fr">Cérémonie à l'église</span></div>
+          <div class="tl-place">2 Rue Hez<br>Ailly-sur-Somme</div>
+        </div>
+        <div class="tl-line">
+          <div class="tl-dot-wrap"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-left"></div>
+        <div class="tl-line">
+          <div class="tl-dot-wrap"></div>
+        </div>
+        <div class="tl-right">
+          <div class="tl-time">19h00</div>
+          <div class="tl-name"><span data-lang="es" class="active">Cocktail & Cena festiva</span><span
+              data-lang="fr">Cocktail & Dîner festif</span></div>
+          <div class="tl-place">138 Av. du Général Leclerc<br>Albert</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-left">
+          <div class="tl-time">22h00</div>
+          <div class="tl-name"><span data-lang="es" class="active">Fiesta & Baile</span><span data-lang="fr">Fête &
+              Danse</span></div>
+              <div class="tl-place">138 Av. du Général Leclerc<br>Albert</div>
+          <div class="tl-place"><span data-lang="es" class="active">¡A celebrar con ellos!</span><span data-lang="fr">On
+              fête avec eux !</span></div>
+        </div>
+        <div class="tl-line" style="background:linear-gradient(to bottom,rgba(184,150,58,0.3),transparent)">
+          <div class="tl-dot-wrap"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ LUGAR ══ -->
+  <section id="lugar">
+    <div class="section-ornament reveal">❀ ✿ ❀</div>
+    <p class="section-label reveal"><span data-lang="es" class="active">Dónde</span><span data-lang="fr">Où</span></p>
+    <h2 class="section-title reveal"><span data-lang="es" class="active">Los lugares</span><span data-lang="fr">Les
+        lieux</span></h2>
+    <div class="gold-line reveal"><span>❁</span></div>
+
+    <div class="lugar-cards">
+      <div class="lugar-card reveal">
+        <div class="lugar-icon">⛪</div>
+        <h3><span data-lang="es" class="active">Ceremonia</span><span data-lang="fr">Cérémonie</span></h3>
+        <p>2 Rue Hez<br>Ailly-sur-Somme, France</p>
+        <div class="lugar-time">16h30</div><br>
+        <a class="map-link" href="https://maps.google.com/?q=Ailly-sur-Somme+France" target="_blank">
+          <span data-lang="es" class="active">Ver en mapa →</span>
+          <span data-lang="fr">Voir sur la carte →</span>
+        </a>
+      </div>
+      <div class="lugar-card reveal">
+        <div class="lugar-icon">🥂</div>
+        <h3><span data-lang="es" class="active">Cena & Fiesta</span><span data-lang="fr">Dîner & Fête</span></h3>
+        <p>138 Av. du Général Leclerc<br>Albert, France</p>
+        <div class="lugar-time">19h00</div><br>
+        <a class="map-link" href="https://maps.google.com/?q=138+Avenue+du+General+Leclerc+Albert+France"
+          target="_blank">
+          <span data-lang="es" class="active">Ver en mapa →</span>
+          <span data-lang="fr">Voir sur la carte →</span>
+        </a>
+      </div>
+      <div class="dress-card reveal">
+        <h3><span data-lang="es" class="active">Dress Code</span><span data-lang="fr">Tenue vestimentaire</span></h3>
+        <p>
+          <span data-lang="es" class="active">Elegante formal · Por favor evitar el blanco y el negro · ¡Vengan con sus
+            mejores galas!</span>
+          <span data-lang="fr">Tenue élégante · Merci d'éviter le blanc et le noir · Venez à votre plus beau !</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ RSVP ══ -->
+  <section id="rsvp">
+    <div class="section-ornament reveal">❀ ✿ ❀</div>
+    <p class="section-label reveal"><span data-lang="es" class="active">Confirmación</span><span
+        data-lang="fr">Confirmation</span></p>
+    <h2 class="section-title reveal"><span data-lang="es" class="active">¿Van a estar?</span><span
+        data-lang="fr">Serez-vous là ?</span></h2>
+    <div class="gold-line reveal"><span>❁</span></div>
+    <p class="rsvp-deadline reveal">
+      <span data-lang="es" class="active">Confirmar antes del 2 de Mayo de 2026</span>
+      <span data-lang="fr">RSVP avant le 2 Mai 2026</span>
+    </p>
+
+    <div class="rsvp-wrap">
+
+
+      <!-- IFRAME del Google Form -->
+      <div class="form-iframe-wrap reveal">
+        <iframe id="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdATgeY3Qr8Zw4-WAM2NY3GhG-tIvoZIYyUzRNrLvsIjxuWKw/viewform?usp=publish-editor" width="100%" height="900" frameborder="0" marginheight="0"
+          marginwidth="0" loading="lazy">
+          <span data-lang="es" class="active">Cargando formulario…</span>
+          <span data-lang="fr">Chargement du formulaire…</span>
+        </iframe>
+
+        <!-- Placeholder visible hasta que se pegue la URL real -->
+        <div class="form-placeholder" id="form-placeholder">
+          <div class="placeholder-icon">📋</div>
+          <p class="placeholder-title">
+            <span data-lang="es" class="active">Formulario de confirmación</span>
+            <span data-lang="fr">Formulaire de confirmation</span>
+          </p>
+          <p class="placeholder-sub">
+            <span data-lang="es" class="active">Seguí los 3 pasos del comentario en el HTML para conectar tu Google Form
+              y reemplazar la URL del iframe.</span>
+            <span data-lang="fr">Suivez les 3 étapes du commentaire HTML pour connecter votre Google Form et remplacer
+              l'URL de l'iframe.</span>
+          </p>
+          <div class="placeholder-steps">
+            <div class="step"><span class="step-num">1</span><span data-lang="es" class="active">Crear el Google Form
+                con las preguntas</span><span data-lang="fr">Créer le Google Form avec les questions</span></div>
+            <div class="step"><span class="step-num">2</span><span data-lang="es" class="active">Vincular con Google
+                Sheets desde Respuestas</span><span data-lang="fr">Lier à Google Sheets depuis Réponses</span></div>
+            <div class="step"><span class="step-num">3</span><span data-lang="es" class="active">Pegar la URL del embed
+                en el iframe del HTML</span><span data-lang="fr">Coller l'URL d'intégration dans l'iframe HTML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ REGALOS ══ -->
+  <section id="regalos">
+    <div class="section-ornament reveal" style="color:rgba(184,150,58,0.5)">❀ ✿ ❀</div>
+    <p class="section-label reveal"><span data-lang="es" class="active">Regalos</span><span
+        data-lang="fr">Cadeaux</span></p>
+    <h2 class="section-title reveal"><span data-lang="es" class="active">Si querés acompañarlos</span><span
+        data-lang="fr">Si vous souhaitez les gâter</span></h2>
+    <div class="gold-line reveal" style="max-width:200px"><span>❁</span></div>
+    <div class="regalo-box reveal">
+      <p>
+        <span data-lang="es" class="active">La presencia de cada uno ya es el mejor regalo. Para quienes deseen hacer un
+          obsequio, pueden contribuir con la luna de miel de Aracelli y Quentin.</span>
+        <span data-lang="fr">La présence de chacun est déjà le plus beau des cadeaux. Pour ceux qui souhaitent offrir
+          quelque chose, vous pouvez contribuer à la lune de miel d'Aracelli et Quentin.</span>
+      </p>
+      <div class="cbu-item">
+        <span>IBAN</span>
+        <code>FR76 3000 6000 0112 3456 7890 189</code>
+      </div>
+      <div class="cbu-item">
+        <span>BIC</span>
+        <code>AGRIFRPP</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div style="font-size:22px;letter-spacing:10px;color:rgba(184,150,58,0.35);margin-bottom:24px">❀ ✿ ❁ ✿ ❀</div>
+    <div class="footer-names">Aracelli & Quentin</div>
+    <p>22 · 08 · 2026 · France</p>
+    <div style="font-size:18px;letter-spacing:8px;color:rgba(184,150,58,0.25);margin-top:24px">❀ ✿ ❀</div>
+  </footer>
+
+ 
+
+  <script src="./Script/main.js"></script>
+
+</body>
+
+</html>
